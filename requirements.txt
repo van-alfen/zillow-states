@@ -1,0 +1,4 @@
+dash==2.15.0
+pandas
+dash_bootstrap_components
+gunicorn
