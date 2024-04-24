@@ -124,6 +124,7 @@ zillow_data['State'] = zillow_data['State'].map(state_abbreviations)
 # ----------------------------
 # instantiate app
 app = Dash( __name__, external_stylesheets=[dbc.themes.SANDSTONE] )
+server = app.server
 
 # change what is shown in the browser tab
 app.title = 'Zillow Map'
@@ -181,4 +182,4 @@ def update_chart(slider_input):
 
 # run the app
 if __name__ == '__main__':
-	app.run_server(debug=True)
+	app.run_server()
